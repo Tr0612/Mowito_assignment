@@ -108,6 +108,7 @@ def detect_features(original,rotated):
 # dist = cv2.imread('/media/thanush/Misc1/Mowito/Test_images/dist.jpg')
 org = input("Enter full path of the test image")
 dist = input("Enter full path of the template image")
+detect_features(org,dist)
 
 #Code to run a set of images
 # mylist = os.listdir("/media/thanush/Misc1/Mowito/Test_images/")
