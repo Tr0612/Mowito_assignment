@@ -1,8 +1,15 @@
 # Mowito_assignment
 
  **You can download the zip file from [Drive](https://drive.google.com/file/d/1cvF2R9VTbtQgQbHdiGpxIzVWMpFtyauh/view?usp=sharing)**
+  - Navigate to Mowito/venv/local/bin and open terminal
+  - Enter `. activate` and now venv environment will be activated
+  - ![Screenshot from 2024-05-15 16-46-01](https://github.com/Tr0612/Mowito_assignment/assets/45840572/a6ada094-2b4f-480d-a79c-068dc87c2b11)
+  - ![Screenshot from 2024-05-15 19-23-08](https://github.com/Tr0612/Mowito_assignment/assets/45840572/3996e7c7-9188-466d-9d11-0d7b4fdd5526)
+  - Go back to Mowito directory in the same terminal
+  - Run `pip install -r requirements.txt`
+  - Necessary packages would be installed
  
-**Environment Setup**
+**Environment Setup if cloning from this repo**
   - Make sure you have virtualenv if not install `pip install virtualenv`
   - In Mowito run `virtualenv venv`  _venv_ folder should be created
   - Navigate to Mowito/venv/local/bin and open terminal
