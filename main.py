@@ -96,21 +96,24 @@ def detect_features(original,rotated):
     plt.text(25,50, "Angle Rotated in Degree by ORB "+str(round(theta_recovered,2)) + "\n Angle Rotated in Degree by SIFT Method "+str(round(theta_recovered_SIFT,2)), bbox=dict(fill=False, edgecolor='red', linewidth=2))
     # plt.suptitle('Matching points ORB, Theta: {}'.format(theta_recovered))  # Set title for the entire figure
     fig.tight_layout()
-    import datetime
-    ts = datetime.datetime.now().strftime("%Y%m%d-%H.%M.%S")
-    plt.savefig(f"/home/thanush/Mowito_Output/Temp3/figure-{ts}.png")
-    plt.show(block=False)
+    #Uncomment the below for saving the file
+    # import datetime
+    # ts = datetime.datetime.now().strftime("%Y%m%d-%H.%M.%S")
+    # plt.savefig(f"/home/thanush/Mowito_Output/Temp3/figure-{ts}.png")
+    plt.show()
 
     
 # org = cv2.imread('/media/thanush/Misc1/Mowito/Test_images/org.jpg')
 # dist = cv2.imread('/media/thanush/Misc1/Mowito/Test_images/dist.jpg')
-# org = input("Enter full path of the test image")
-# dist = input("Enter full path of the template image")
-mylist = os.listdir("/media/thanush/Misc1/Mowito/Test_images/")
-for i in range(4,15):
-    org = "/media/thanush/Misc1/Mowito/Template/screenshot_2024-05-02_17-22-50.jpg" #temp 3
-    dist = "/media/thanush/Misc1/Mowito/Test_images/"+mylist[i]
-    detect_features(org,dist)
+org = input("Enter full path of the test image")
+dist = input("Enter full path of the template image")
+
+#Code to run a set of images
+# mylist = os.listdir("/media/thanush/Misc1/Mowito/Test_images/")
+# for i in range(4,15):
+#     org = "/media/thanush/Misc1/Mowito/Template/screenshot_2024-05-02_17-22-50.jpg" #temp 3
+#     dist = "/media/thanush/Misc1/Mowito/Test_images/"+mylist[i]
+#     detect_features(org,dist)
 
 
 
