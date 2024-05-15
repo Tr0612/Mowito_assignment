@@ -34,6 +34,13 @@
   - ![image](https://github.com/Tr0612/Mowito_assignment/assets/45840572/b59e88c6-58a9-4a3b-998f-0dd248a131a6)
   - Run `python3 detector.py`. Its successful if no error comes here.
 
+**SAMPLE OUTPUT**
+
+![Template_1_output](https://github.com/Tr0612/Mowito_assignment/assets/45840572/fe48bf38-5888-4941-9627-e54656083778)
+
+**Matching the Keypoints and Descriptor visualisation**
+![Graph](https://github.com/Tr0612/Mowito_assignment/assets/45840572/4da1cbe6-191d-4e19-8ede-6934acbc0862)
+
 **File Description**
   - _main.py_ -> Main execution python file, which has code for keypoint detection etc
   - _detector.py_ -> Python file for running the MASKRCNN detection for the given images
@@ -41,14 +48,6 @@
   - _angle_finder.ipynb_ -> Notebook for experimenting various methods such as ORB,SIFT,SURF
   - _Rotation_finder.mlx_ -> MATLAB script for finding the angle
   - _Coco-segmented_ -> Folder comprising image dataset with label used for training the deep learning model
-   
-
-**SAMPLE OUTPUT**
-
-![Template_1_output](https://github.com/Tr0612/Mowito_assignment/assets/45840572/fe48bf38-5888-4941-9627-e54656083778)
-
-**Matching the Keypoints and Descriptor visualisation**
-![Graph](https://github.com/Tr0612/Mowito_assignment/assets/45840572/4da1cbe6-191d-4e19-8ede-6934acbc0862)
 
 
 
