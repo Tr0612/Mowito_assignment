@@ -17,7 +17,8 @@ def load_images(original_path,rotated_path):
 
 def detect_features(original,rotated):
     original_path,distorted_path,original,distorted = load_images(original,rotated)
-    name = distorted_path[-4:]
+    # name = distorted_path[-4:]
+    
     #Detect Region
     org_region = detector(original_path)
     dist_region = detector(distorted_path)
@@ -57,7 +58,7 @@ def detect_features(original,rotated):
     bf = cv2.BFMatcher()
     # Match descriptors
     matches = bf.knnMatch(descriptors_original_SIFT, descriptors_distorted_SIFT, k=2)
-    # Apply ratio test
+
     good_matches = []
     for m, n in matches:
         if m.distance < 0.75 * n.distance:
@@ -77,24 +78,24 @@ def detect_features(original,rotated):
     # print('Recovered scale:', scale_recovered_SIFT)
     print('Recovered theta:', theta_recovered_SIFT)
 
-    fig, axs = plt.subplots(1, 2, figsize=(15, 5))  # Adjust figsize for image size
+    fig, axs = plt.subplots(1, 2, figsize=(15, 5))  
 
 # Display images on the first two subplots
     axs[0].imshow(org_region)
     axs[0].set_title('Original')
-    axs[0].axis('off')  # Hide axes for cleaner display
+    axs[0].axis('off') 
 
     axs[1].imshow(dist_region)
     axs[1].set_title('Rotated')
     axs[1].axis('off') 
-     # Hide axes for cleaner display
+    
     # fig, axes = plt.subplots(1, 2, figsize=(15, 5)) 
     # # Visualize matches on the third subplot
     # plot_matches(axes, original, distorted, keypoints_original, keypoints_distorted, matches)
     # axes.set_title('Matches')
     # axes.axis('off')  # Hide axes for cleaner display
     plt.text(25,50, "Angle Rotated in Degree by ORB "+str(round(theta_recovered,2)) + "\n Angle Rotated in Degree by SIFT Method "+str(round(theta_recovered_SIFT,2)), bbox=dict(fill=False, edgecolor='red', linewidth=2))
-    # plt.suptitle('Matching points ORB, Theta: {}'.format(theta_recovered))  # Set title for the entire figure
+    # plt.suptitle('Matching points ORB, Theta: {}'.format(theta_recovered)) 
     fig.tight_layout()
     #Uncomment the below for saving the file
     # import datetime
