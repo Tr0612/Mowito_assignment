@@ -3,6 +3,7 @@
 **Environment Setup**
   - Navigate to Mowito/venv/local/bin and open terminal
   - Enter `. activate` and now venv environment will be activated
+  - ![Screenshot from 2024-05-15 16-46-01](https://github.com/Tr0612/Mowito_assignment/assets/45840572/a6ada094-2b4f-480d-a79c-068dc87c2b11)
   - Go back to Mowito directory in the same terminal
   - Run `pip install -r requirements.txt`
   - Necessary packages would be installed
