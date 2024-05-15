@@ -24,7 +24,7 @@
 
 **Setting up Detectron2**
   - Open _mowito-detection.ipynb_  and run first 3 cells and 5th cell , so that detectron2 is setup
-  - Adding the weights, download the weights from this link and add to mowito directory
+  - Adding the weights, download the weights from this link [WEIGHTS FILE](https://drive.google.com/file/d/1ERtfLBxr_i9JJ3AZ1_Y4fc4e6BaC8hMS/view?usp=sharing) and add to mowito directory
   - In 6th cell update the path to weight file
   - ![image](https://github.com/Tr0612/Mowito_assignment/assets/45840572/b59e88c6-58a9-4a3b-998f-0dd248a131a6)
 
