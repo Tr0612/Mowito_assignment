@@ -30,7 +30,7 @@ def detector(image_path):
     cfg.SOLVER.STEPS = []        # do not decay learning rate
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 512   # The "RoIHead batch size". 128 is faster, and good enough for this toy dataset (default: 512)
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 1
-    cfg.MODEL.WEIGHTS = "./Object_detection_model_weights/model_final.pth"  # path to the model we just trained
+    cfg.MODEL.WEIGHTS = "./model_final.pth"  # path to the model we just trained
     cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5   # set a custom testing threshold
     predictor = DefaultPredictor(cfg)
     from detectron2.utils.visualizer import ColorMode
