@@ -1,5 +1,7 @@
 # Mowito_assignment
 
+ **You can download the zip file from [Drive](https://drive.google.com/file/d/1cvF2R9VTbtQgQbHdiGpxIzVWMpFtyauh/view?usp=sharing)**
+ 
 **Environment Setup**
   - Make sure you have virtualenv if not install `pip install virtualenv`
   - In Mowito run `virtualenv venv`  _venv_ folder should be created
