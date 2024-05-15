@@ -38,4 +38,8 @@
 
 ![Template_1_output](https://github.com/Tr0612/Mowito_assignment/assets/45840572/fe48bf38-5888-4941-9627-e54656083778)
 
+**Matching the Keypoints and Descriptor visualisation**
+![Graph](https://github.com/Tr0612/Mowito_assignment/assets/45840572/4da1cbe6-191d-4e19-8ede-6934acbc0862)
+
+
 
